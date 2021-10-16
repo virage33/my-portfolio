@@ -1,0 +1,57 @@
+*{
+    margin:0;
+    padding: 0;
+}
+@font-face {
+    font-family: "Ubuntu";
+    src: local("Ubuntu"), url(./assets/fonts/Ubuntu-Medium.ttf) format("truetype");
+}
+:root{
+    --font-family: 'Ubuntu', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    --font-size-normal: 1;
+    --font-size-bold: 3rem;
+    --font-size-semi:1.5rem;
+    --font-size-small:0.7rem;
+
+    --header-height: 3rem;
+}
+
+:root{
+    --primary-color: #dfdfdf;
+    --accent-color:#ff512f;
+    --font-color:#020202;
+    --light-font-color: #8f8f8f;
+    --dark-font-grey:#292928;
+
+}
+@media screen and (min-width:768px) {
+    :root{
+        --font-family: 'Open Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        --font-size-normal: 1;
+        --font-size-bold: 4rem;
+        --font-size-semi:2.25;
+        --font-size-small:0.7rem;
+    
+       
+    }      
+    
+}
+::before::after{
+    box-sizing: border-box ;
+}
+
+body{
+    margin: var(--header-height) 0px 0 0px;
+    
+    background-color: var(--primary-color);
+    color: var(--font-color);
+}
+
+.bd-grid{
+    display: grid;
+    max-width: 100%;
+    grid-template-columns: 100%;
+    grid-column-gap: 2rem;
+    width: calc(100%-3rem);
+    margin: 0 0 0 0;
+}

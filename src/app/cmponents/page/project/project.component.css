@@ -1,0 +1,145 @@
+.container{
+    margin-top: 7%;
+    scroll-behavior: smooth;
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font-family);
+    color: var(--dark-font-grey);
+}
+
+.intro_container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+    margin-bottom: 2rem;
+    
+}
+.h5_container{
+    display: flex;
+    flex-direction: row;   
+}
+.h5_container h5{
+    font-size: 1.5rem;
+    font-weight: lighter;
+}
+.h5_design{
+    width: 50%;
+    height: 1.5rem;
+    margin-left: 1rem;
+    background-color: var(--accent-color);
+}
+
+.intro_title h2{
+    font-size: 6rem;
+}
+.intro_brief_container{
+    display: flex;
+    flex-direction: row;
+}
+/*.intro_brief_design{
+    width: 10%;
+    height: 100%;
+    background-color: tomato;
+}*/
+.intro_brief{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    
+}
+.paragraph1{
+    margin-top: .5rem;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+}
+.paragraph2{
+    font-weight: 100;
+    font-size: .8rem;
+    color: var(--light-font-color);
+}
+
+.project_container{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    height: 70vh;
+    width: 100%;
+   /* background-color: tomato;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.project_container2{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    height: 70vh;
+    width: 100%;
+    direction: rtl;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.project_image{
+    align-self: center;
+    margin: 2rem;
+    width: 60%;
+    height: 100%;
+    background-image: url("../../../../assets/project1.gif");
+    background-size: cover;
+    
+}
+.project_image2{
+    align-self: center;
+    margin: 2rem;
+    width: 60%;
+    height: 100%;
+    background-image: url("../../../../assets/project2.gif");
+    background-size: cover;
+    
+}
+
+.project_brief{
+    width: 40%;
+    height: 100%;
+    padding: 2rem;
+    
+        
+}
+.project_title_container{
+    display: flex;
+    flex-direction: row;
+}
+.project_title{
+    font-size: 2rem;
+    
+}
+.project_title_design{
+    margin-left: 1rem;
+    margin-right:1rem ;
+    width: 20%;
+    background-color: var(--accent-color);
+    height: 2rem;
+}
+.project_paragraph{
+    margin-top: 2rem;
+    line-height: 1.3rem;
+    
+}
+.button{
+    margin-top: 3rem;
+    height: 3rem;
+    width: 12rem;
+    border: 2px solid var(--accent-color);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button:hover{
+    background-color: var(--accent-color);
+    color: thistle;
+    transform: translateY(-3px);
+    transition: .5s;
+}
+
+

@@ -1,0 +1,135 @@
+.container{
+    display: grid;
+    
+    grid-template-columns: 100%;
+    column-gap: 2rem;
+    max-width: 100%;
+    color: var(--dark-font-grey);
+    font-family: var(--font-family);
+
+}
+.rightdesign{
+    height: 100vh;
+    width: 20%;
+    background-color: var(--accent-color);
+    position: fixed;
+    right: 0;
+    z-index: -1;
+}
+.leftdesign{
+    width: 50%;
+    height: 6rem;
+    align-self: center;
+    background-color: var(--accent-color);
+}
+.contact_box{
+    justify-content: center;
+    width: 100%;
+    margin-top: 2%;
+    display: flex;
+    flex-direction: row;
+    margin: 0 0 0 0;
+}
+.left{
+    width: 10%;
+    display: flex;
+}
+.center{
+    width: 50%;
+    justify-self: center;
+    justify-content: center;
+    padding: 2rem;
+    align-self: center;
+}
+.right{
+    align-self: center;
+    width: 40%;
+    display: flex;
+    flex-direction: column; 
+    height: 70%;
+    background-color: var(--dark-font-grey);
+    padding: 2rem;
+    color: var(--primary-color);
+    justify-content: space-evenly;
+    transition: .4s;
+
+}
+.right:hover{
+    width: 60%;
+    transition: .6s;
+}
+
+.form_group{
+    justify-self: center;
+    justify-content: center;
+    width: 100%;
+}
+input{
+    width: 80%;
+    height: 1.2rem;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-color: var(--light-font-color);
+    justify-self: center;
+    margin-top: 1.5rem;
+    padding: 1rem;
+    border-width: 1.5px;
+}
+textarea{
+    width: 80%;
+    height: 2rem;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-color: var(--light-font-color);
+    justify-self: center;
+    margin-top: 2rem;
+    padding: 1rem;
+    border-width: 1.5px;
+}
+
+.sendbtn{
+    color: var(--primary-color);
+    cursor: pointer;
+    width: 85%;
+    border: none;
+    height: 4rem;
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: var(--font-color);
+}
+.sendbtn:hover{
+    transform: translateY(-2px);
+}
+
+.contactme{
+    letter-spacing: .2rem;
+    font-size: 3rem;
+}
+.paragraph1{
+    margin-top: 1rem;
+    letter-spacing: .2rem;
+    line-height: 1.3rem;
+}
+
+.info{
+    font-size: 2rem;
+}
+.info_element{
+    display: flex;    
+    align-items: center;
+}
+
+img{
+    width: 8%;
+    margin-right: 3rem;
+}
+
+@media screen and(max-width:768px) {
+    
+    .contact_box{
+        display: flex;
+        flex-direction: column;
+    }
+}
