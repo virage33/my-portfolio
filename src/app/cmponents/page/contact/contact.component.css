@@ -147,8 +147,8 @@ img{
                              "right";
     }
     .rightdesign{
-        height: 50%;
-        width: 10%;
+        height: 0;
+        width: 0;
         background-color: var(--accent-color);
         z-index: -1;
     }

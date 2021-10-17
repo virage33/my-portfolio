@@ -58,9 +58,11 @@
         top: var(--header-height);
         right: -100%;
         width: 30%;
+        opacity: 90%;
         height: 100%;
         padding: 2rem;
         transition: .5s;
+        background-color:var(--accent-color);
 
     }
     .nav_list{
@@ -72,6 +74,10 @@
     }
     .nav_link{
         font-family: var(--font-family);
+    }
+    .nav_link:hover{
+        color: var(--primary-color);
+        
     }
     .toggle_menu{
         position: fixed;
