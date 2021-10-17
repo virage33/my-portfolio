@@ -77,6 +77,7 @@
     }
     .nav_link:hover{
         color: var(--primary-color);
+        transform: scale(120%);
         
     }
     .toggle_menu{
