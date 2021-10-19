@@ -7,7 +7,9 @@ import { NavbarComponent } from './cmponents/navbar/navbar.component';
 import {HomeComponent} from './cmponents/home/home.component';
 import { AboutComponent } from './cmponents/page/about/about.component';
 import { ContactComponent } from './cmponents/page/contact/contact.component';
-import { ProjectComponent } from './cmponents/page/project/project.component'
+import { ProjectComponent } from './cmponents/page/project/project.component';
+import { HttpClientModule } from '@angular/common/http';
+import { UserService } from './services/user.service';
 
 @NgModule({
   declarations: [
@@ -17,12 +19,14 @@ import { ProjectComponent } from './cmponents/page/project/project.component'
     AboutComponent,
     ContactComponent,
     ProjectComponent,
+    
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
   ],
-  providers: [],
+  providers: [UserService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

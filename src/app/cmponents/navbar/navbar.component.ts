@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {Router} from '@angular/router';
+import { UserService } from 'src/app/services/user.service';
+
 
 @Component({
   selector: 'app-navbar',
@@ -8,13 +10,25 @@ import {Router} from '@angular/router';
 })
 export class NavbarComponent implements OnInit {
 
+  bio:any ={};
   
-  constructor(private router:Router){}
+  constructor(private router:Router, private bioData:UserService){}
 
   gotoPage(pageName:string):void{
     this.router.navigate([`${pageName}`])
   }
   ngOnInit(): void {
+   // this.bioData.http.get("http://portfolio-dotnet.herokuapp.com/api/v1/biodata/4").subscribe((resp:any)=>{
+      //this.bio=resp;
+    //},
+    //()=>{},)
+    this.bioData.getData().subscribe(
+      (response:any)=>{
+        this.bio=response;
+      },
+      ()=>{}
+    )
+    
     const showMenu = (toggleId:any,navId:any)=>{
       const toggle = document.getElementById(toggleId)
       let nav=document.getElementById(navId);
