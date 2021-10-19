@@ -58,6 +58,13 @@
     font-size: .8rem;
     color: var(--light-font-color);
 }
+.paragraph3{
+    font-weight: 100;
+    margin-top: 1rem;
+    font-size: .8rem;
+    
+    text-align: end;
+}
 
 .project_container{
     margin-top: 2rem;

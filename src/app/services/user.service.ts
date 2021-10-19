@@ -8,7 +8,7 @@ export class UserService {
 
   constructor(public http:HttpClient) { }
   getData(){
-    let url:string = "http://portfolio-dotnet.herokuapp.com/api/v1/biodata/4";
+    let url:string = "https://portfolio-dotnet.herokuapp.com/api/v1/biodata/4";
     return this.http.get(url);
   }
 }
