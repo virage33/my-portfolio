@@ -18,10 +18,7 @@ export class NavbarComponent implements OnInit {
     this.router.navigate([`${pageName}`])
   }
   ngOnInit(): void {
-   // this.bioData.http.get("http://portfolio-dotnet.herokuapp.com/api/v1/biodata/4").subscribe((resp:any)=>{
-      //this.bio=resp;
-    //},
-    //()=>{},)
+   
     this.bioData.getData().subscribe(
       (response:any)=>{
         this.bio=response;

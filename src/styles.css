@@ -41,17 +41,8 @@
 }
 
 body{
-    margin: var(--header-height) 0px 0 0px;
-    
+    margin: var(--header-height) 0px 0 0px;  
     background-color: var(--primary-color);
     color: var(--font-color);
 }
 
-.bd-grid{
-    display: grid;
-    max-width: 100%;
-    grid-template-columns: 100%;
-    grid-column-gap: 2rem;
-    width: calc(100%-3rem);
-    margin: 0 0 0 0;
-}
